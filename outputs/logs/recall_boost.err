@@ -1,0 +1,16 @@
+02:56:19 INFO: copy exact_name_address__S2.parquet
+02:56:19 INFO: copy exact_name_address__S3.parquet
+02:56:19 INFO: copy postal__S2.parquet
+02:56:19 INFO: copy postal__S3.parquet
+02:56:19 INFO: copy rare_name_token__S2.parquet
+02:56:19 INFO: copy rare_name_token__S3.parquet
+02:56:19 INFO: copy rare_address_token__S2.parquet
+02:56:19 INFO: copy rare_address_token__S3.parquet
+02:56:19 INFO: copy address_token__S2.parquet
+02:56:19 INFO: copy address_token__S3.parquet
+02:56:19 INFO: copy char_ngram__S2.parquet
+02:56:19 INFO: copy char_ngram__S3.parquet
+02:56:19 INFO: copy rapidfuzz__S2.parquet
+02:56:19 INFO: copy rapidfuzz__S3.parquet
+02:56:19 INFO: RUN exact_name S2
+02:58:43 INFO:   -> 41,348,244 pairs, 143.6s

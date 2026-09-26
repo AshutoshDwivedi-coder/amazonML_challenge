@@ -1,0 +1,100 @@
+00:17:01 INFO blocking.run: Config loaded from configs/blocking.yaml
+00:17:01 INFO blocking.run: Enabled blocks: ['exact_name', 'exact_address', 'exact_name_address', 'postal', 'house_number_name', 'rare_name_token', 'rare_address_token', 'name_prefix', 'address_token', 'char_ngram', 'rapidfuzz']
+00:17:01 INFO src.blocking.candidate_generator: Normalizing sources (chunk_size=200000)…
+00:17:16 INFO src.blocking.io_utils: Normalized 200,000 rows → s1_normalized.parquet
+00:17:33 INFO src.blocking.io_utils: Normalized 400,000 rows → s1_normalized.parquet
+00:18:04 INFO src.blocking.io_utils: Normalized 800,000 rows → s1_normalized.parquet
+00:18:35 INFO src.blocking.io_utils: Normalized 1,200,000 rows → s1_normalized.parquet
+00:19:03 INFO src.blocking.io_utils: Normalized 1,600,000 rows → s1_normalized.parquet
+00:19:35 INFO src.blocking.io_utils: Normalized 2,000,000 rows → s1_normalized.parquet
+00:19:54 INFO src.blocking.io_utils: Done normalizing s1_normalized.parquet (2,206,821 rows)
+00:20:11 INFO src.blocking.io_utils: Normalized 200,000 rows → s2_normalized.parquet
+00:20:30 INFO src.blocking.io_utils: Normalized 400,000 rows → s2_normalized.parquet
+00:21:05 INFO src.blocking.io_utils: Normalized 800,000 rows → s2_normalized.parquet
+00:21:41 INFO src.blocking.io_utils: Normalized 1,200,000 rows → s2_normalized.parquet
+00:22:16 INFO src.blocking.io_utils: Normalized 1,600,000 rows → s2_normalized.parquet
+00:22:52 INFO src.blocking.io_utils: Normalized 2,000,000 rows → s2_normalized.parquet
+00:23:55 INFO src.blocking.io_utils: Normalized 2,400,000 rows → s2_normalized.parquet
+00:24:57 INFO src.blocking.io_utils: Normalized 2,800,000 rows → s2_normalized.parquet
+00:26:01 INFO src.blocking.io_utils: Normalized 3,200,000 rows → s2_normalized.parquet
+00:27:04 INFO src.blocking.io_utils: Normalized 3,600,000 rows → s2_normalized.parquet
+00:28:07 INFO src.blocking.io_utils: Normalized 4,000,000 rows → s2_normalized.parquet
+00:29:09 INFO src.blocking.io_utils: Normalized 4,400,000 rows → s2_normalized.parquet
+00:30:08 INFO src.blocking.io_utils: Normalized 4,800,000 rows → s2_normalized.parquet
+00:30:43 INFO src.blocking.io_utils: Done normalizing s2_normalized.parquet (5,034,616 rows)
+00:31:11 INFO src.blocking.io_utils: Normalized 200,000 rows → s3_normalized.parquet
+00:31:42 INFO src.blocking.io_utils: Normalized 400,000 rows → s3_normalized.parquet
+00:32:42 INFO src.blocking.io_utils: Normalized 800,000 rows → s3_normalized.parquet
+00:33:44 INFO src.blocking.io_utils: Normalized 1,200,000 rows → s3_normalized.parquet
+00:34:46 INFO src.blocking.io_utils: Normalized 1,600,000 rows → s3_normalized.parquet
+00:35:47 INFO src.blocking.io_utils: Normalized 2,000,000 rows → s3_normalized.parquet
+00:36:50 INFO src.blocking.io_utils: Normalized 2,400,000 rows → s3_normalized.parquet
+00:37:44 INFO src.blocking.io_utils: Normalized 2,800,000 rows → s3_normalized.parquet
+00:38:17 INFO src.blocking.io_utils: Normalized 3,200,000 rows → s3_normalized.parquet
+00:38:54 INFO src.blocking.io_utils: Normalized 3,600,000 rows → s3_normalized.parquet
+00:39:28 INFO src.blocking.io_utils: Normalized 4,000,000 rows → s3_normalized.parquet
+00:40:02 INFO src.blocking.io_utils: Normalized 4,400,000 rows → s3_normalized.parquet
+00:40:37 INFO src.blocking.io_utils: Normalized 4,800,000 rows → s3_normalized.parquet
+00:41:10 INFO src.blocking.io_utils: Normalized 5,200,000 rows → s3_normalized.parquet
+00:41:18 INFO src.blocking.io_utils: Done normalizing s3_normalized.parquet (5,285,603 rows)
+00:41:18 INFO src.blocking.candidate_generator: Normalized parquet ready. peak_rss=248MB
+00:41:53 INFO src.blocking.candidate_generator: [BLOCK] exact_name source=S2 candidates=19,782,478 unique_s1=1,681,842 avg=11.76 runtime=24.0s mem=5544MB
+00:43:30 INFO src.blocking.candidate_generator: [BLOCK] exact_name source=S3 candidates=24,196,059 unique_s1=1,688,695 avg=14.33 runtime=23.8s mem=7037MB
+00:45:24 INFO src.blocking.candidate_generator: [BLOCK] exact_address source=S2 candidates=1,089,675 unique_s1=601,159 avg=1.81 runtime=3.6s mem=5821MB
+00:45:29 INFO src.blocking.candidate_generator: [BLOCK] exact_address source=S3 candidates=218,208 unique_s1=206,280 avg=1.06 runtime=2.3s mem=4736MB
+00:45:34 INFO src.blocking.candidate_generator: [BLOCK] exact_name_address source=S2 candidates=403,831 unique_s1=325,320 avg=1.24 runtime=4.1s mem=4706MB
+00:45:39 INFO src.blocking.candidate_generator: [BLOCK] exact_name_address source=S3 candidates=4,936 unique_s1=4,887 avg=1.01 runtime=3.8s mem=4713MB
+00:45:47 INFO src.blocking.candidate_generator: [BLOCK] postal source=S2 candidates=2,916,413 unique_s1=141,890 avg=20.55 runtime=5.3s mem=4695MB
+00:46:11 INFO src.blocking.candidate_generator: [BLOCK] postal source=S3 candidates=3,053,657 unique_s1=142,818 avg=21.38 runtime=6.0s mem=5125MB
+00:46:55 INFO src.blocking.candidate_generator: [BLOCK] house_number_name source=S2 candidates=6,256,685 unique_s1=1,307,296 avg=4.79 runtime=21.3s mem=5461MB
+00:48:02 INFO src.blocking.candidate_generator: [BLOCK] house_number_name source=S3 candidates=6,971,030 unique_s1=1,327,581 avg=5.25 runtime=23.2s mem=5729MB
+00:49:13 INFO src.blocking.candidate_generator: [BLOCK] rare_name_token source=S2 candidates=3,382,100 unique_s1=266,749 avg=12.68 runtime=29.0s mem=5033MB
+00:50:00 INFO src.blocking.candidate_generator: [BLOCK] rare_name_token source=S3 candidates=3,327,231 unique_s1=259,839 avg=12.80 runtime=33.5s mem=4092MB
+00:51:48 INFO src.blocking.candidate_generator: [BLOCK] rare_address_token source=S2 candidates=6,248,974 unique_s1=566,481 avg=11.03 runtime=92.0s mem=1874MB
+00:54:10 INFO src.blocking.candidate_generator: [BLOCK] rare_address_token source=S3 candidates=6,305,913 unique_s1=566,547 avg=11.13 runtime=111.1s mem=2333MB
+00:55:34 INFO src.blocking.candidate_generator: [BLOCK] name_prefix source=S2 candidates=15,400,986 unique_s1=1,212,383 avg=12.70 runtime=44.6s mem=5967MB
+00:58:07 INFO src.blocking.candidate_generator: [BLOCK] name_prefix source=S3 candidates=12,883,387 unique_s1=1,125,588 avg=11.45 runtime=35.9s mem=6168MB
+00:59:47 INFO src.blocking.candidate_generator: [BLOCK] address_token source=S2 candidates=3,793,600 unique_s1=1,003,953 avg=3.78 runtime=7.9s mem=4990MB
+01:00:13 INFO src.blocking.candidate_generator: [BLOCK] address_token source=S3 candidates=3,931,424 unique_s1=1,046,194 avg=3.76 runtime=7.6s mem=4241MB
+01:00:33 INFO src.blocking.candidate_generator: Approximate block char_ngram on 10,124 residual S1s
+01:04:55 INFO src.blocking.candidate_generator: [BLOCK] char_ngram source=S2 candidates=21,926 unique_s1=2,859 avg=7.67 runtime=260.3s mem=4187MB
+01:09:12 INFO src.blocking.candidate_generator: [BLOCK] char_ngram source=S3 candidates=20,327 unique_s1=2,702 avg=7.52 runtime=255.7s mem=3984MB
+01:09:14 INFO src.blocking.candidate_generator: Approximate block rapidfuzz on 6,845 residual S1s
+01:09:36 INFO src.blocking.candidate_generator: [BLOCK] rapidfuzz source=S2 candidates=1,352 unique_s1=338 avg=4.00 runtime=20.6s mem=3989MB
+01:09:56 INFO src.blocking.candidate_generator: [BLOCK] rapidfuzz source=S3 candidates=1,668 unique_s1=415 avg=4.02 runtime=19.0s mem=3988MB
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Lenovo\OneDrive\Desktop\amazon ML\src\blocking\run.py", line 164, in <module>
+    write_evaluation_csv(metrics + cum, args.eval_out)
+     ^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\amazon ML\src\blocking\run.py", line 89, in main
+    cfg = load_config(args.config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        args.s1,
+    
+  File "C:\Users\Lenovo\OneDrive\Desktop\amazon ML\src\blocking\candidate_generator.py", line 177, in generate
+    self._union_to_parquet(union_pq)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\amazon ML\src\blocking\candidate_generator.py", line 269, in _union_to_parquet
+    con.execute(
+    ~~~~~~~~~~~^
+        f"""
+        ^^^^
+    ...<9 lines>...
+        """
+        ^^^
+    )
+    ^
+_duckdb.OutOfMemoryException: Out of Memory Error: failed to offload data block of size 256.0 KiB (14.5 GiB/14.5 GiB used).
+This limit was set by the 'max_temp_directory_size' setting.
+By default, this setting utilizes the available disk space on the drive where the 'temp_directory' is located.
+You can adjust this setting, by using (for example) PRAGMA max_temp_directory_size='10GiB'
+
+Possible solutions:
+* Reducing the number of threads (SET threads=X)
+* Disabling insertion-order preservation (SET preserve_insertion_order=false)
+* Increasing the memory limit (SET memory_limit='...GB')
+
+See also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads

@@ -1,0 +1,47 @@
+# Tuned for FULL train (raise caps — dropping oversized keys was killing recall).
+# Sample-tuned caps (name=150) caused exact_name max==150 and lost popular-name matches.
+
+max_name_frequency: 2000
+max_address_frequency: 500
+max_name_address_frequency: 2000
+max_postal_frequency: 5000
+max_postal_name_prefix_frequency: 300
+max_postal_house_frequency: 300
+max_house_name_frequency: 400
+max_prefix_frequency: 120
+max_token_frequency: 5000
+max_rare_token_block_size: 150
+max_address_token_block_size: 150
+max_ngram_block_size: 80
+
+rare_token_min_frequency: 2
+rare_token_max_frequency: 40
+rare_token_min_length: 4
+max_rare_tokens_per_record: 3
+
+name_prefix_lengths: [6, 8]
+char_ngram_sizes: [3, 4, 5]
+char_ngram_top_k: 20
+char_ngram_min_shared: 3
+
+rapidfuzz_enabled: false
+rapidfuzz_top_k: 15
+rapidfuzz_score_cutoff: 88
+rapidfuzz_only_unresolved: true
+rapidfuzz_max_pool: 300
+
+enabled_blocks:
+  - exact_name
+  - exact_address
+  - exact_name_address
+  - postal
+  - house_number_name
+  - rare_name_token
+  - rare_address_token
+  - name_prefix
+  - address_token
+  - char_ngram
+
+chunk_size: 200000
+work_dir: D:/amazon_ml_blocking/work
+random_seed: 42

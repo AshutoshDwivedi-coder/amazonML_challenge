@@ -1,0 +1,49 @@
+# Tuned after 20k-sample train eval:
+# Stage through rare_address_token: ~94.6% pair recall @ ~64 avg cands/S1
+# name_prefix@500 with len=4 exploded volume (+2% recall, +160 avg) — tightened.
+
+max_name_frequency: 150
+max_address_frequency: 150
+max_name_address_frequency: 500
+max_postal_frequency: 5000
+max_postal_name_prefix_frequency: 100
+max_postal_house_frequency: 100
+max_house_name_frequency: 100
+max_prefix_frequency: 40
+max_token_frequency: 2000
+max_rare_token_block_size: 80
+max_address_token_block_size: 80
+max_ngram_block_size: 50
+
+rare_token_min_frequency: 2
+rare_token_max_frequency: 25
+rare_token_min_length: 4
+max_rare_tokens_per_record: 2
+
+name_prefix_lengths: [6, 8]
+char_ngram_sizes: [3, 4, 5]
+char_ngram_top_k: 20
+char_ngram_min_shared: 3
+
+rapidfuzz_enabled: true
+rapidfuzz_top_k: 15
+rapidfuzz_score_cutoff: 88
+rapidfuzz_only_unresolved: true
+rapidfuzz_max_pool: 300
+
+enabled_blocks:
+  - exact_name
+  - exact_address
+  - exact_name_address
+  - postal
+  - house_number_name
+  - rare_name_token
+  - rare_address_token
+  - name_prefix
+  - address_token
+  - char_ngram
+  - rapidfuzz
+
+chunk_size: 200000
+work_dir: outputs/sample/work
+random_seed: 42

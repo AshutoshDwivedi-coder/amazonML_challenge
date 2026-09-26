@@ -1,0 +1,11 @@
+dataset/
+.venv/
+__pycache__/
+.env
+
+# Generated blocking data
+outputs/work/
+outputs/sample/
+outputs/*.tsv
+outputs/*.csv
+outputs/logs/

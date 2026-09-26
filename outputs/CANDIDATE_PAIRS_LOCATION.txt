@@ -1,0 +1,19 @@
+﻿FULL-TRAIN CANDIDATE ARTEFACTS (C: disk near full — stored on D:)
+
+Long pairs (Sudhanshu handoff):
+  D:\amazon_ml_blocking\outputs\candidate_pairs.tsv
+  (100,435,430 pairs | 2,200,463 unique S1 | avg 45.51)
+
+Official submission format:
+  D:\amazon_ml_blocking\outputs\candidate_pairs_submission.tsv
+
+Union parquet:
+  D:\amazon_ml_blocking\work\candidate_pairs_union.parquet
+
+Evaluation:
+  outputs\blocking_evaluation.csv  (also D:\amazon_ml_blocking\outputs\blocking_evaluation.csv)
+
+Sample (20k) reference:
+  outputs\candidate_pairs_sample20k.tsv
+  outputs\blocking_evaluation_sample20k.csv
+  outputs\blocking_misses_sample20k.tsv
